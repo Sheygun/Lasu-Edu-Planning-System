@@ -18,7 +18,7 @@ header,
   height: 100%;
   width: 100%;
 }.intro-2 {
-	background: url("../images/Webp.net-compress-image.jpg") no-repeat center center;
+	background: url("../images/resize.jpg") no-repeat center center;
 	position: relative;
     background-size: cover;
 }
