@@ -1,0 +1,27 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    line-height: 30px;
+}
+p{
+    text-align: justify;
+}
+
+
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+  width: 100%;
+}.intro-2 {
+	background: url("../images/LASUarial.jpg") no-repeat center center;
+	position: relative;
+    background-size: cover;
+}
+.faculty-section{
+    height: 400px;;
+}
