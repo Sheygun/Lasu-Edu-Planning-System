@@ -8,5 +8,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('index'))
   .get('/computer', (req, res) => res.render('department/students/computer'))
+  .get('/minipage', (req, res) => res.render('department/minipage'))
+  .get('/cscstaffpage', (req, res) => res.render('department/staffs/computer'))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
