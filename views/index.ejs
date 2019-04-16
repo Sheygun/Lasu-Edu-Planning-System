@@ -46,8 +46,47 @@
 
     <div class="mx-4">
         <div class="row my-5" style="">
-            <div class="col-md-6" >
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="col-md-9 mx-auto d-flex justify-content-center align-item-center my-5">
+                <center>
+                  <h1 style="font-size: 25px; font-weight: bold" >OBJECTIVE</h1>
+                  <h2 class="mx-auto text-center" align="justify">The main Objective of the project is to help the Institution in decision making and to also ensure in letting the school management to know the actual total
+                    number of Staff (teaching and non-teaching), the departments units, the students(male and female), the facilities and their capacities.
+                  </h2>
+                  <h1 style="font-size: 25px; font-weight: bold" >AIM</h1>
+                  <h2 class="mx-auto text" align="justify">
+                            <ul>
+                              <li>
+                                  To identify and model educational performance indices.
+                              </li>
+                              <li>To develop and implement an Intelligent system for educational planning</li>
+
+                            </ul>
+
+
+
+                  </h2>
+                </center>
+              </div>
+          </div>
+    </div>
+
+<div class="mx-4">
+    <div class="row my-5">
+        <div class="col-md-10 justify-content-center align-item-center d-flex mx-auto">
+                <form class="text-center border border-light p-5">
+                    <h1>This project covers Lagos State University as a whole, from students to the staffs and to the facilities and their capacities</h1>
+                      <button type="button" data-toggle="modal" data-target="#basicExampleModal" class="btn btn-outline-blue p-4  my-5 waves-effect"><span class="h3">GET STARTED NOW</span></button>
+                      <!-- <button type="button"  class="btn btn-outline-blue p-4  my-1 waves-effect"><span class="h3">STAFF</span></button> -->
+                      <!-- <button type="button" data-toggle="modal" data-target="#basicExampleModal3" class="btn btn-outline-blue p-4  my-1 waves-effect"><span class="h3">FACILITIES</span></button> -->
+                </form>
+
+
+
+
+
+
+                <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" style="height: 320px;" src="stylesheets/images/other/IMG_20190410_122246_553.JPG" alt="First slide" >
@@ -67,46 +106,10 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
-                  </div>
+                  </div> -->
 
-            </div>
-            <div class="col-md-6 my-5">
-                <center>
-                  <h1 style="font-size: 25px; font-weight: bold" >OBJECTIVE</h1>
-                  <h2 class="mx-auto" align="justify">The main Objective of the project is to help the Institution in decision making and to also ensure in letting the school management to know the actual total
-                    number of Staff (teaching and non-teaching), the departments units, the students(male and female), the facilities and their capacities.
-                  </h2>
-                  <h1 style="font-size: 25px; font-weight: bold" >AIM</h1>
-                  <h2 class="mx-auto" align="justify">
-                            <ul>
-                              <li>
-                                  To identify and model educational performance indices.
-                              </li>
-                              <li>To develop and implement an Intelligent system for educational planning</li>
-
-                            </ul>
-
-
-
-                  </h2>
-                </center>
-              </div>
-          </div>
-    </div>
-
-<div class="mx-4">
-    <div class="row" style="height:500px;">
-        <div class="col-md-6">
-              <form class="text-center border border-light p-5">
-                  <h1>This project covers Lagos State University as a whole, from students to the staffs and to the facilities and their capacities</h1>
-                    <button type="button" data-toggle="modal" data-target="#basicExampleModal" class="btn btn-outline-blue p-4  my-5 waves-effect"><span class="h3">GET STARTED</span></button>
-                    <!-- <button type="button"  class="btn btn-outline-blue p-4  my-1 waves-effect"><span class="h3">STAFF</span></button> -->
-                    <!-- <button type="button" data-toggle="modal" data-target="#basicExampleModal3" class="btn btn-outline-blue p-4  my-1 waves-effect"><span class="h3">FACILITIES</span></button> -->
-              </form>
         </div>
-        <div class="col-md-6 blue">
 
-          </div>
       </div>
 </div>
 
@@ -131,25 +134,31 @@
           <div class="modal-body">
               <div style="margin: 20px 100px;">
                   <center>
-                      <select class="browser-default custom-select h5" style="height: 50px;">
+                      <select class="browser-default custom-select h5" style="height: 50px;" id="faculty">
                           <option selected>-- SELECT FACULTY --</option>
-                          <option class="" value="1">SCIENCE</option>
-                          <option class="" value="2">ART</option>
-                          <option class="" value="3">EDUCATION</option>
+                          <option class="" value="science">SCIENCE</option>
+                          <option class="" value="art">ART</option>
+                          <!-- <option class="" value="education">EDUCATION</option> -->
                         </select>
 
-                        <select class="browser-default custom-select h5" style="height: 50px;">
-                            <option selected>-- SELECT DEPARTMENT --</option>
-                            <option class="" value="1">COMPUTER SCIENCE</option>
-                            <option class="" value="2">MATHEMATICS</option>
-                            <option class="" value="3">PHYSICS</option>
+                        <select class="browser-default custom-select h5" disabled style="height: 50px;" id="dept">
+                            <option selected value="dept">-- SELECT DEPARTMENT --</option>
+                            <option class="" value="1"></option>
+                            <option class="" value="2"></option>
+                            <option class="" value="3"></option>
+                            <option class="" value="4"></option>
+                            <option class="" value="5"></option>
+                            <option class="" value="6"></option>
+                            <option class="" value="7"></option>
+                            <option class="" value="8"></option>
+                            <option class="" value="9"></option>
                           </select>
                   </center>
               </div>
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-block p-4" data-dismiss="modal" onclick="window.location.replace('/minipage');"><span class="h3">PROCEED >>></span></button>
+            <button type="button" class="btn btn-secondary btn-block p-4" data-dismiss="modal" disabled id="proceeds"><span class="h3">PROCEED >>></span></button>
           </div>
         </div>
       </div>
