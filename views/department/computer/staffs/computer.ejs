@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lasu Edu-Planning System</title>
+  <link rel="stylesheet" href="./stylesheets/css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/css/mdb.min.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+        <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/css/animate.css">
+        <link rel="stylesheet" href="stylesheets/css/media-queries.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" type="text/css" href="stylesheets/css/switcher.css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/css/fractionslider.css"/>
+        <link rel="stylesheet" href="stylesheets/css/style-fraction.css"/>
+</head>
+<body>
+        <nav class="navbar navbar-dark fixed-top black">
+                <a class="navbar-brand" href="#">
+                  <h1 onclick="window.location.replace('/');" class="p-3 font-weight-bold">LASU EDU-PLANNIG SYSTEM</h1>
+                </a>
+        </nav>
+
+        <div style="height: 80px;"></div>
+        <div class="text-center mx-auto d-flex justify-content-center align-item-center">
+                <h1 class="purple p-4 font-weight-bold rounded">COMPUTER SCIENCE DEPARTMENT</h1>
+        </div>
+           <div class="container" id="print">
+
+               <div class="row">
+                       <div class="col-md-3">
+                                <div class="row my-3">
+                                                <div class="col-12">
+                                                               <div>
+                                                                        <center>
+                                                                                <h3 class="my-4 font-weight-bold">STAFFS</h3>
+                                                                        </center>
+                                                               </div>
+                                                    <div class="card">
+                                                            <div class="card-body">
+                                                                <center>
+                                                                        <h4 class="card-title font-weight-bold"><a>Teaching Staff</a></h4>
+                                                                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
+                                                                        <div class="collapse" id="collapseExample">
+
+                                                                                <div class="mt-3">
+
+                                                                                        <div class="row">
+                                                                                                <div class="col-4 p-3">
+                                                                                                        <h5>Male: </h5>
+                                                                                                </div>
+                                                                                                <div class="col-6 p-2">
+                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="staffMaleNumber" >
+                                                                                                </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                                        <div class="col-4 p-3">
+                                                                                                                <h5>Female: </h5>
+                                                                                                        </div>
+                                                                                                        <div class="col-6 p-2">
+                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="staffFemaleNumber" onblur="calculate();">
+                                                                                                        </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                                        <div class="col-4 p-3">
+                                                                                                                <h5>Total: </h5>
+                                                                                                        </div>
+                                                                                                        <div class="col-6 p-2">
+                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="staffTotal">
+                                                                                                        </div>
+                                                                                        </div>
+
+                                                                                </div>
+
+                                                                              </div>
+                                                                    </center>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                                        <div class="col-12">
+                                                        <div class="card">
+                                                                <div class="card-body">
+                                                                        <center>
+                                                                                <h4 class="card-title font-weight-bold"><a>Non-Teaching Staff</a></h4>
+                                                                                <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
+                                                                                <div class="collapse" id="collapseExample2">
+
+
+                                                                                                <div class="mt-3">
+
+                                                                                                                <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Male: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="nonStaffMaleNumber" >
+                                                                                                                        </div>
+                                                                                                                </div>
+
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-4 p-3">
+                                                                                                                                        <h5>Female: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="nonStaffFemaleNumber" onblur="calculate();">
+                                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-4 p-3">
+                                                                                                                                        <h5>Total: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="nonStaffTotal">
+                                                                                                                                </div>
+                                                                                                                </div>
+
+                                                                                                        </div>
+                                                                                      </div>
+                                                                            </center>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                         </div>
+
+                                         <br><br>
+
+                        </div>
+
+
+                       <div class="col-md-4 mt-3">
+                                <div class="row mb-3">
+                                                <div class="col-12">
+                                                               <div>
+                                                                        <center class="">
+                                                                                <h3 class="my-4 font-weight-bold">STUDENTS LEVELS</h3>
+                                                                        </center>
+                                                               </div>
+                                                    <div class="card">
+                                                            <div class="card-body">
+                                                                <center>
+                                                                        <h4 class="card-title font-weight-bold"><a>1OO level</a></h4>
+                                                                        <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExampl3" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
+                                                                        <div class="collapse" id="collapseExample3">
+
+                                                                                <div class="mt-3">
+
+                                                                                        <div class="row">
+                                                                                                <div class="col-3 p-3">
+                                                                                                        <h5>Male: </h5>
+                                                                                                </div>
+                                                                                                <div class="col-6 p-2">
+                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber" >
+                                                                                                </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                                        <div class="col-3 p-3">
+                                                                                                                <h5>Female: </h5>
+                                                                                                        </div>
+                                                                                                        <div class="col-6 p-2">
+                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber" onblur="calculate();">
+                                                                                                        </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                                        <div class="col-3 p-3">
+                                                                                                                <h5>Total: </h5>
+                                                                                                        </div>
+                                                                                                        <div class="col-6 p-2">
+                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel1">
+                                                                                                        </div>
+                                                                                        </div>
+
+                                                                                    <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow()">
+                                                                                            <span class="h4 font-weight-bold" >Calculate Now</span>
+                                                                                    </button>
+                                                                                </div>
+
+                                                                              </div>
+                                                                    </center>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                                        <div class="col-12">
+                                                        <div class="card">
+                                                                <div class="card-body">
+                                                                        <center>
+                                                                                <h4 class="card-title font-weight-bold"><a>2OO level</a></h4>
+                                                                                <a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
+                                                                                <div class="collapse" id="collapseExample4">
+
+                                                                                        <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-3 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber2" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber2" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel2">
+                                                                                                                        </div>
+                                                                                                        </div>
+
+                                                                                                        <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow2()">
+                                                                                                                <span class="h4 font-weight-bold" >Calculate Now</span>
+                                                                                                        </button>
+                                                                                                </div>
+
+
+                                                                                      </div>
+                                                                            </center>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                         </div>
+
+                                         <div class="row mb-3">
+                                                        <div class="col-12">
+                                                        <div class="card">
+                                                                <div class="card-body">
+                                                                        <center>
+                                                                                <h4 class="card-title font-weight-bold"><a>3OO level</a></h4>
+                                                                                <a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
+                                                                                <div class="collapse" id="collapseExample5">
+                                                                                <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-3 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber3" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber3" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel3">
+                                                                                                                        </div>
+                                                                                                        </div>
+
+                                                                                                        <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow3()">
+                                                                                                                <span class="h4 font-weight-bold" >Calculate Now</span>
+                                                                                                        </button>
+                                                                                                </div>
+                                                                                      </div>
+                                                                            </center>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                         </div>
+                                         <div class="row mb-3">
+                                                        <div class="col-12">
+                                                        <div class="card">
+                                                                <div class="card-body">
+                                                                        <center>
+                                                                                <h4 class="card-title font-weight-bold"><a>4OO level</a></h4>
+                                                                                <a data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
+                                                                                <div class="collapse" id="collapseExample6">
+
+                                                                                                <div class="mt-3">
+
+                                                                                                                <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Male: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber4" >
+                                                                                                                        </div>
+                                                                                                                </div>
+
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-3 p-3">
+                                                                                                                                        <h5>Female: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber4" onblur="calculate();">
+                                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-3 p-3">
+                                                                                                                                        <h5>Total: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel4">
+                                                                                                                                </div>
+                                                                                                                </div>
+
+                                                                                                                <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow4()">
+                                                                                                                        <span class="h4 font-weight-bold" >Calculate Now</span>
+                                                                                                                </button>
+                                                                                                        </div>
+                                                                                      </div>
+                                                                            </center>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                         </div>
+                                         <div class="row mb-3">
+                                                        <div class="col-12">
+                                                        <div class="card">
+                                                                <div class="card-body">
+                                                                        <center>
+                                                                                <h4 class="card-title font-weight-bold"><a>5OO level</a></h4>
+                                                                                <a data-toggle="collapse" href="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
+                                                                                <div class="collapse" id="collapseExample7">
+
+                                                                                <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-3 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber5" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber5" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-3 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel5">
+                                                                                                                        </div>
+                                                                                                        </div>
+
+                                                                                                        <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow5()">
+                                                                                                                <span class="h4 font-weight-bold" >Calculate Now</span>
+                                                                                                        </button>
+                                                                                                </div>
+                                                                                      </div>
+                                                                            </center>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                         </div>
+               </div>
+
+
+                       <div class="col-md-5 mt-3">
+                                <div>
+
+
+
+                                        <div class="card" id="totalCapacity2">
+                                                        <div class="card-body">
+                                                                        <center>
+                                                                                <h2 class="font-weight-bold my-3">RATIO</h2>
+                                                                        </center>
+                                                                        <h3 class="font-weight-bold blue-text" id="titleBar"></h3>
+                                                                <h3>Student ratio to Teaching Staff: <span id="sratio" class="font-weight-bold h1"></span></h3>
+                                                                <h3>Student ratio to Non-Teaching Staff: <span id="sratio2" class="font-weight-bold h1"></span></h3>
+
+                                                                <!-- <h3>Staff ratio to 100 level Student:<span id="sratio2" class="font-weight-bold h1"></span></h3>
+                                                                <h3>Staff ratio to 200 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
+                                                                <h3>Staff ratio to 300 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
+                                                                <h3>Staff ratio to 400 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
+                                                                <h3>Staff ratio to 500 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3> -->
+
+                                                                <!-- <button type="button" class="btn btn-outline-green btn-block mt-5 mb-3 waves-effect" onclick="calculate();">
+                                                                        <span class="h3">Calculate Ratio</span>
+                                                                </button> -->
+                                                                <button type="button" class="btn btn-outline-red btn-block my-3 waves-effect" onclick="sclears();">
+                                                                                <span class="h3">Clear Data</span>
+                                                                 </button>
+                                                        </div>
+                                                </div>
+
+
+                                </div>
+                       </div>
+               </div>
+
+           </div>
+           <div style="height: 20px;"></div>
+
+
+
+        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fluid" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+
+                        <div class="mt-3">
+                                <h3>MALE: 100</h3>
+                                <h3>FEMALE: 100</h3>
+                                <h3>TOTAL: 200</h3>
+                            </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary p-4" onclick="printIn();"><span class="h3">PRINT</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+        <footer class="">
+                <div class="black">
+                    <div class="footer-copyright text-center py-5 h3 white-text" style="margin: 0px;"> Copyright © 2019 <span class="red-text">Group 6 Project</span>
+                    </div>
+                  </div>
+            </footer>
+</body>
+
+
+
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="stylesheets/js/javascript.js"></script>
+   <script type="text/javascript" src="stylesheets/js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="stylesheets/js/popper.min.js"></script>
+   <script type="text/javascript" src="stylesheets/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="stylesheets/js/mdb.min.js"></script>
+   <script src="stylesheets/js/jquery-1.11.1.min.js"></script>
+         <script src="stylesheets/bootstrap/js/bootstrap.min.js"></script>
+         <script src="stylesheets/js/jquery.backstretch.min.js"></script>
+         <script src="stylesheets/js/wow.min.js"></script>
+         <script src="stylesheets/js/retina-1.1.0.min.js"></script>
+         <script src="stylesheets/js/scripts.js"></script>
+         <script type="text/javascript" src="stylesheets/js/jquery.cookie.js"></script>
+ <script type="text/javascript" src="stylesheets/js/styleswitch.js"></script>
+ <script src="stylesheets/js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.smartmenus.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.smartmenus.bootstrap.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/owl.carousel.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jflickrfeed.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.magnific-popup.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.isotope.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.easypiechart.min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/swipe.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery-scrolltofixed-min.js"></script>
+ <script type="text/javascript" src="stylesheets/js/jquery.matchHeight-min.js"></script>
+
+ <script src="stylesheets/js/main.js"></script>
+ <script>
+        new WOW().init();
+</script>
+</html>
