@@ -28,6 +28,8 @@
         </nav>
 
         <div style="height: 80px;"></div>
+        <h4 class="p-2 ">You are here <a href="/">Home</a> -> <a href="/minipage">Minipage</a> -> Student</h4>
+
                 <div class="text-center mx-auto d-flex justify-content-center align-item-center">
                         <h1 class="purple p-4 font-weight-bold rounded">COMPUTER SCIENCE DEPARTMENT</h1>
                 </div>
@@ -49,11 +51,36 @@
                                                                         <h4 class="card-title font-weight-bold"><a>1OO level</a></h4>
                                                                         <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
                                                                         <div class="collapse" id="collapseExample">
-                                                                                <div class="mt-3">
-                                                                                    <h5>MALE: 100</h5>
-                                                                                    <h5>FEMALE: 100</h5>
-                                                                                    <h4 class="font-weight-bold" >TOTAL: <span id="csclevel1">200</span></h4>
-                                                                                </div>
+
+                                                                                        <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-4 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentMaleNumber1" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentFemaleNumber1" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel1">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                </div>
+
                                                                               </div>
                                                                     </center>
                                                             </div>
@@ -69,11 +96,36 @@
                                                                                 <h4 class="card-title font-weight-bold"><a>2OO level</a></h4>
                                                                                 <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
                                                                                 <div class="collapse" id="collapseExample2">
-                                                                                 <div class="mt-3">
-                                                                                    <h5>MALE: 90</h5>
-                                                                                    <h5>FEMALE: 130</h5>
-                                                                                    <h4 class="font-weight-bold" >TOTAL: <span id="csclevel2">220</span></h4>
-                                                                                </div>
+
+                                                                                <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-4 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentMaleNumber2" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentFemaleNumber2" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel2">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                </div>
+
                                                                                       </div>
                                                                             </center>
                                                                 </div>
@@ -89,11 +141,35 @@
                                                                                 <h4 class="card-title font-weight-bold"><a>3OO level</a></h4>
                                                                                 <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
                                                                                 <div class="collapse" id="collapseExample3">
-                                                                                <div class="mt-3">
-                                                                                    <h5>MALE: 100</h5>
-                                                                                    <h5>FEMALE: 100</h5>
-                                                                                    <h4 class="font-weight-bold" >TOTAL: <span id="csclevel">300</span></h4>
-                                                                                </div>
+
+                                                                                                <div class="mt-3">
+
+                                                                                                                <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Male: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentMaleNumber3" >
+                                                                                                                        </div>
+                                                                                                                </div>
+
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-4 p-3">
+                                                                                                                                        <h5>Female: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentFemaleNumber3" onblur="calculate();">
+                                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                                <div class="row">
+                                                                                                                                <div class="col-4 p-3">
+                                                                                                                                        <h5>Total: </h5>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-6 p-2">
+                                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel3">
+                                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                        </div>
                                                                                       </div>
                                                                             </center>
                                                                 </div>
@@ -108,30 +184,35 @@
                                                                                 <h4 class="card-title font-weight-bold"><a>4OO level</a></h4>
                                                                                 <a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
                                                                                 <div class="collapse" id="collapseExample4">
-                                                                                <div class="mt-3">
-                                                                                    <h5>MALE: 100</h5>
-                                                                                    <h5>FEMALE: 100</h5>
-                                                                                    <h4 class="font-weight-bold" >TOTAL: <span id="csclevel4">400</span></h4>
-                                                                                </div>
-                                                                                      </div>
-                                                                            </center>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                         </div>
-                                         <div class="row mb-3">
-                                                        <div class="col-12">
-                                                        <div class="card">
-                                                                <div class="card-body">
-                                                                        <center>
-                                                                                <h4 class="card-title font-weight-bold"><a>5OO level</a></h4>
-                                                                                <a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" class="btn btn-primary btn-block"><span class="h5">Check Population</span></a>
-                                                                                <div class="collapse" id="collapseExample5">
-                                                                                <div class="mt-3">
-                                                                                    <h5>MALE: 100</h5>
-                                                                                    <h5>FEMALE: 100</h5>
-                                                                                    <h4 class="font-weight-bold" >TOTAL: <span id="csclevel5">500</span></h4>
-                                                                                </div>
+
+                                                                                 <div class="mt-3">
+
+                                                                                                        <div class="row">
+                                                                                                                <div class="col-4 p-3">
+                                                                                                                        <h5>Male: </h5>
+                                                                                                                </div>
+                                                                                                                <div class="col-6 p-2">
+                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentMaleNumber4" >
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Female: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="studentFemaleNumber4" onblur="calculate();">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div class="row">
+                                                                                                                        <div class="col-4 p-3">
+                                                                                                                                <h5>Total: </h5>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6 p-2">
+                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel4">
+                                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                </div>
                                                                                       </div>
                                                                             </center>
                                                                 </div>
@@ -216,7 +297,7 @@
                        </div>
 
 
-                       <div class="col-md-4 mt-3">
+                       <div class="col-md-5 mt-3">
                                 <div>
                                                 <div>
                                                         <center>
@@ -226,20 +307,27 @@
 
                                         <div class="card" id="totalCapacity">
                                                 <div class="card-body">
-                                                        <h1 class="text-center font-weight-bold" id="headers"></h1>
+                                                        <h1 class="text-center my-4 blue-text font-weight-bold" id="headers"></h1>
                                                         <h3>Capacity of Chairs: <span id="chair" class="font-weight-bold h1"></span></h3>
                                                         <h3>No of Fans: <span id="fan" class="font-weight-bold h1"></span></h3>
                                                         <h3>No of Air Conditions: <span id="aircon" class="font-weight-bold h1"></span></h3>
-                                                        <h3>Ratio to 100 Level Students: <span id="ratio" class="font-weight-bold h1"></span></h3>
+                                                        <h3>Ratio to 100 Level Students: <span id="ratio1" class="font-weight-bold h1"></span></h3>
                                                         <h3>Ratio to 200 Level Students: <span id="ratio2" class="font-weight-bold h1"></span></h3>
                                                         <h3>Ratio to 300 Level Students: <span id="ratio3" class="font-weight-bold h1"></span></h3>
                                                         <h3>Ratio to 400 Level Students: <span id="ratio4" class="font-weight-bold h1"></span></h3>
-                                                        <h3>Ratio to 500 Level Students: <span id="ratio5" class="font-weight-bold h1"></span></h3>
                                                         <button type="button" class="btn btn-outline-red btn-block my-3 waves-effect" onclick="clears();">
                                                                 <span class="h3">Clear Data</span>
                                                         </button>
                                                 </div>
                                         </div>
+
+                                        <div class="chart-container" style="position: relative; height:300px; width:auto;">
+                                                        <div class="blue py-1 mt-5">
+                                                                <h3 class="text-center font-weight-bold mt-2 white-text">BAR CHART</h3>
+                                                        </div>
+                                                                <canvas class=""  id="myChart"></canvas>
+                                                                <h6 class="text-center h4">Student to Facilities Staff</h6>
+                                                            </div>
                                 </div>
                        </div>
                </div>
@@ -249,24 +337,7 @@
 
 
 
-        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fluid" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
 
-                        <div class="mt-3">
-                                <h3>MALE: 100</h3>
-                                <h3>FEMALE: 100</h3>
-                                <h3>TOTAL: 200</h3>
-                            </div>
-
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary p-4" onclick="printIn();"><span class="h3">PRINT</span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
 
         <footer class="">
                 <div class="black">
@@ -310,7 +381,7 @@
  <script type="text/javascript" src="stylesheets/js/jquery-scrolltofixed-min.js"></script>
  <script type="text/javascript" src="stylesheets/js/jquery.matchHeight-min.js"></script>
 
- <script src="stylesheets/js/main.js"></script>
+ <script src="stylesheets/js/student.js"></script>
  <script>
         new WOW().init();
 </script>

@@ -28,6 +28,7 @@
         </nav>
 
         <div style="height: 80px;"></div>
+        <h4 class="p-2 ">You are here <a href="/">Home</a> -> <a href="/minipage">Minipage</a> -> Staff</h4>
         <div class="text-center mx-auto d-flex justify-content-center align-item-center">
                 <h1 class="purple p-4 font-weight-bold rounded">COMPUTER SCIENCE DEPARTMENT</h1>
         </div>
@@ -335,53 +336,6 @@
                                                             </div>
                                                     </div>
                                          </div>
-                                         <div class="row mb-3">
-                                                        <div class="col-12">
-                                                        <div class="card">
-                                                                <div class="card-body">
-                                                                        <center>
-                                                                                <h4 class="card-title font-weight-bold"><a>5OO level</a></h4>
-                                                                                <a data-toggle="collapse" href="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" class="btn btn-primary btn-block"><span class="h5">Check Ratio</span></a>
-                                                                                <div class="collapse" id="collapseExample7">
-
-                                                                                <div class="mt-3">
-
-                                                                                                        <div class="row">
-                                                                                                                <div class="col-3 p-3">
-                                                                                                                        <h5>Male: </h5>
-                                                                                                                </div>
-                                                                                                                <div class="col-6 p-2">
-                                                                                                                        <input class="form-control form-control-lg p-3" type="number" placeholder="" id="maleNumber5" >
-                                                                                                                </div>
-                                                                                                        </div>
-
-                                                                                                        <div class="row">
-                                                                                                                        <div class="col-3 p-3">
-                                                                                                                                <h5>Female: </h5>
-                                                                                                                        </div>
-                                                                                                                        <div class="col-6 p-2">
-                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="femaleNumber5" onblur="calculate();">
-                                                                                                                        </div>
-                                                                                                        </div>
-                                                                                                        <div class="row">
-                                                                                                                        <div class="col-3 p-3">
-                                                                                                                                <h5>Total: </h5>
-                                                                                                                        </div>
-                                                                                                                        <div class="col-6 p-2">
-                                                                                                                                <input class="form-control form-control-lg p-3" type="number" placeholder="" id="csclevel5">
-                                                                                                                        </div>
-                                                                                                        </div>
-
-                                                                                                        <button type="button" class="btn btn-outline-blue waves-effect" onclick="checkNow5()">
-                                                                                                                <span class="h4 font-weight-bold" >Calculate Now</span>
-                                                                                                        </button>
-                                                                                                </div>
-                                                                                      </div>
-                                                                            </center>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                         </div>
                </div>
 
 
@@ -398,16 +352,6 @@
                                                                         <h3 class="font-weight-bold blue-text" id="titleBar"></h3>
                                                                 <h3>Student ratio to Teaching Staff: <span id="sratio" class="font-weight-bold h1"></span></h3>
                                                                 <h3>Student ratio to Non-Teaching Staff: <span id="sratio2" class="font-weight-bold h1"></span></h3>
-
-                                                                <!-- <h3>Staff ratio to 100 level Student:<span id="sratio2" class="font-weight-bold h1"></span></h3>
-                                                                <h3>Staff ratio to 200 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
-                                                                <h3>Staff ratio to 300 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
-                                                                <h3>Staff ratio to 400 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3>
-                                                                <h3>Staff ratio to 500 level Student: <span id="sratio2" class="font-weight-bold h1"></span></h3> -->
-
-                                                                <!-- <button type="button" class="btn btn-outline-green btn-block mt-5 mb-3 waves-effect" onclick="calculate();">
-                                                                        <span class="h3">Calculate Ratio</span>
-                                                                </button> -->
                                                                 <button type="button" class="btn btn-outline-red btn-block my-3 waves-effect" onclick="sclears();">
                                                                                 <span class="h3">Clear Data</span>
                                                                  </button>
@@ -416,32 +360,21 @@
 
 
                                 </div>
+                                <div class="chart-container" style="position: relative; height:300px; width:auto;">
+                                        <div class="blue py-1 mt-5">
+                                                <h3 class="text-center font-weight-bold mt-2 white-text">BAR CHART</h3>
+                                        </div>
+                                                <canvas class=""  id="myChart"></canvas>
+                                                <h6 class="text-center h4">Student to Teaching Staff</h6>
+                                            </div>
+
+
                        </div>
                </div>
 
            </div>
            <div style="height: 20px;"></div>
 
-
-
-        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fluid" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-
-                        <div class="mt-3">
-                                <h3>MALE: 100</h3>
-                                <h3>FEMALE: 100</h3>
-                                <h3>TOTAL: 200</h3>
-                            </div>
-
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary p-4" onclick="printIn();"><span class="h3">PRINT</span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
 
         <footer class="">
                 <div class="black">
@@ -485,8 +418,11 @@
  <script type="text/javascript" src="stylesheets/js/jquery-scrolltofixed-min.js"></script>
  <script type="text/javascript" src="stylesheets/js/jquery.matchHeight-min.js"></script>
 
- <script src="stylesheets/js/main.js"></script>
+ <!-- <script src="stylesheets/js/main.js" type="text/javascript"></script> -->
+ <script src="stylesheets/js/staff.js" type="text/javascript"></script>
+ <script src="stylesheets/js/chart.js" type="text/javascript"></script>
  <script>
         new WOW().init();
 </script>
+
 </html>
