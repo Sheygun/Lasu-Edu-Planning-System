@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- ============================================= this is the head of the index page where stylesheets files are connect to externally =============================== -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lasu Edu-Planning System</title>
-  <link rel="stylesheet" href="./stylesheets/css/style.css">
+  <title>Project for Group 6</title>
+  <link rel="stylesheet" href="stylesheets/css/style.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
   <link href="stylesheets/css/mdb.min.css" rel="stylesheet">
@@ -14,18 +15,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
         <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheets/css/animate.css">
-        <link rel="stylesheet" href="stylesheets/css/media-queries.css">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" type="text/css" href="stylesheets/css/switcher.css" media="screen" />
-        <link rel="stylesheet" href="stylesheets/css/fractionslider.css"/>
-        <link rel="stylesheet" href="stylesheets/css/style-fraction.css"/>
 </head>
+<!-- ====================================== the body of the html page ========================================== -->
 <body>
+        <!-- navbar section -->
         <nav class="navbar navbar-dark fixed-top black">
                 <a class="navbar-brand" href="#">
                   <h1 onclick="window.location.replace('/');" class="p-3 font-weight-bold">LASU EDU-PLANNIG SYSTEM</h1>
                 </a>
         </nav>
+<!-- ====================================== Main Page for Student ==================================sheygun======== -->
 
         <div style="height: 80px;"></div>
         <h4 class="p-2 ">You are here <a href="/">Home</a> -> <a href="/minipage">Minipage</a> -> Staff</h4>
@@ -36,6 +35,7 @@
 
                <div class="row">
                        <div class="col-md-3">
+       <!-- ============================================= Teaching Staff section in the staff page =========================================================== -->
                                 <div class="row my-3">
                                                 <div class="col-12">
                                                                <div>
@@ -86,7 +86,7 @@
                                                         </div>
                                                 </div>
                                         </div>
-
+       <!-- ============================================= Non Teaching Staff section in the staff page =========================================================== -->
                                         <div class="row mb-3">
                                                         <div class="col-12">
                                                         <div class="card">
@@ -137,7 +137,7 @@
 
                         </div>
 
-
+       <!-- ============================================= Student level basically for 100 level student in the staff page =========================================================== -->
                        <div class="col-md-4 mt-3">
                                 <div class="row mb-3">
                                                 <div class="col-12">
@@ -192,7 +192,7 @@
                                                         </div>
                                                 </div>
                                         </div>
-
+       <!-- ============================================= Student level basically for 200 level student in the staff page =========================================================== -->
                                         <div class="row mb-3">
                                                         <div class="col-12">
                                                         <div class="card">
@@ -242,7 +242,7 @@
                                                             </div>
                                                     </div>
                                          </div>
-
+       <!-- ============================================= fStudent level basically for 300 level student in the staff page =========================================================== -->
                                          <div class="row mb-3">
                                                         <div class="col-12">
                                                         <div class="card">
@@ -289,6 +289,8 @@
                                                             </div>
                                                     </div>
                                          </div>
+       <!-- ============================================= fStudent level basically for 400 level student in the staff page =========================================================== -->
+
                                          <div class="row mb-3">
                                                         <div class="col-12">
                                                         <div class="card">
@@ -338,12 +340,9 @@
                                          </div>
                </div>
 
-
+       <!-- ============================================= Ratio calculator for staff section =========================================================== -->
                        <div class="col-md-5 mt-3">
                                 <div>
-
-
-
                                         <div class="card" id="totalCapacity2">
                                                         <div class="card-body">
                                                                         <center>
@@ -358,23 +357,23 @@
                                                         </div>
                                                 </div>
 
-
                                 </div>
-                                <div class="chart-container" style="position: relative; height:300px; width:auto;">
+       <!-- ============================================= Bar chart Section ==================================================sheygun========= -->
+
+                                <div class="chart-container" style="position: relative;">
                                         <div class="blue py-1 mt-5">
                                                 <h3 class="text-center font-weight-bold mt-2 white-text">BAR CHART</h3>
                                         </div>
-                                                <canvas class=""  id="myChart"></canvas>
+                                                <canvas class="" style="height: 500px; width: 100%;"  id="myChart"></canvas>
                                                 <h6 class="text-center h4">Student to Teaching Staff</h6>
-                                            </div>
-
-
+                                 </div>
                        </div>
                </div>
 
            </div>
            <div style="height: 20px;"></div>
 
+       <!-- ============================================= footer for the group project =========================================================== -->
 
         <footer class="">
                 <div class="black">
@@ -382,15 +381,11 @@
                     </div>
                   </div>
             </footer>
+<!-- ============================================= end of the body code ++++++++++++++++++++++++++++++ -->
+
 </body>
 
-
-
-
-
-
-
-
+<!-- ================================= script included as plugins to enhance Javascript functions ==================================sheygun====== -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="stylesheets/js/javascript.js"></script>
@@ -399,28 +394,12 @@
    <script type="text/javascript" src="stylesheets/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="stylesheets/js/mdb.min.js"></script>
    <script src="stylesheets/js/jquery-1.11.1.min.js"></script>
-         <script src="stylesheets/bootstrap/js/bootstrap.min.js"></script>
-         <script src="stylesheets/js/jquery.backstretch.min.js"></script>
-         <script src="stylesheets/js/wow.min.js"></script>
-         <script src="stylesheets/js/retina-1.1.0.min.js"></script>
-         <script src="stylesheets/js/scripts.js"></script>
-         <script type="text/javascript" src="stylesheets/js/jquery.cookie.js"></script>
- <script type="text/javascript" src="stylesheets/js/styleswitch.js"></script>
- <script src="stylesheets/js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.smartmenus.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.smartmenus.bootstrap.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/owl.carousel.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/jflickrfeed.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.magnific-popup.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.isotope.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.easypiechart.min.js"></script>
- <script type="text/javascript" src="stylesheets/js/swipe.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery-scrolltofixed-min.js"></script>
- <script type="text/javascript" src="stylesheets/js/jquery.matchHeight-min.js"></script>
+    <script src="stylesheets/js/wow.min.js"></script>
 
- <!-- <script src="stylesheets/js/main.js" type="text/javascript"></script> -->
- <script src="stylesheets/js/staff.js" type="text/javascript"></script>
- <script src="stylesheets/js/chart.js" type="text/javascript"></script>
+ <script src="stylesheets/js/staff.js" type="text/javascript"></script> <!-- Javascript functions for Staff Ratio Calculations section -->
+ <script src="stylesheets/js/chart.js" type="text/javascript"></script> <!-- Javascript functions for Bar Chart section -->
+
+ <!-- some Minor Javascript functions for web reactions -->
  <script>
         new WOW().init();
 </script>
